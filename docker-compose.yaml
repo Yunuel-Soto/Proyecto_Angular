@@ -15,7 +15,7 @@ services:
     image: presentacion:1.0.0
     container_name: portal
     ports:
-      - 80:81
+      - 81:80
 
   logica:
     build: ./
