@@ -4,10 +4,10 @@ services:
   db:
     image: mysql
     restart: always
-    container_name: mysql-test
+    container_name: mysql-test-brian
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: test
+      MYSQL_DATABASE: test-brian
     ports:
       - 3306:3306
 
@@ -15,7 +15,7 @@ services:
     image: presentacion:1.0.0
     container_name: portal
     ports:
-      - 80:80
+      - 80:81
 
   logica:
     build: ./
