@@ -15,7 +15,7 @@ services:
     image: presentacion:1.0.0
     container_name: portal
     ports:
-      - 81:80
+      - 82:80
 
   logica:
     build: ./
@@ -23,6 +23,6 @@ services:
     container_name: logica
     #script: alembic upgrade head
     ports:
-      - 8000:8000
+      - 8002:8000
     links:
       - db
